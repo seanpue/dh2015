@@ -1,0 +1,351 @@
+---
+rules:
+  ' ': ' '
+  . <wb>: .
+  "\0": ''
+  _: '-'
+  "\t": "\t"
+  "\n": "\n"
+  '!': '!'
+  '''': ''''
+  '"': '"'
+  (: (
+  <wb> i ((: \N{LATIN SMALL LETTER E WITH CARON}
+  ((: \N{MODIFIER LETTER LEFT HALF RING}
+  ): )
+  )): \N{MODIFIER LETTER RIGHT HALF RING}
+  ',': ','
+  '-': '-'
+  --: --
+  '----': '----'
+  -e: -e
+  .s: \N{LATIN SMALL LETTER S WITH DOT BELOW}
+  .z: \N{LATIN SMALL LETTER Z WITH DOT BELOW}
+  /: /
+  ':': \N{COLON}
+  :n: \N{LATIN SMALL LETTER N WITH DOT ABOVE}
+  :t: t\N{COMBINING DIAERESIS BELOW}
+  :z: z\N{COMBINING DIAERESIS BELOW}
+  ;: \N{SEMICOLON}
+  ;aa: \N{LATIN SMALL LETTER A WITH CIRCUMFLEX}
+  ;e: \N{LATIN SMALL LETTER E WITH CARON}
+  ;o: \N{LATIN SMALL LETTER O WITH CARON}
+  ;d: \N{LATIN SMALL LETTER D WITH DOT BELOW}
+  ;dh: \N{LATIN SMALL LETTER D WITH DOT BELOW}h
+  ;g: \N{LATIN SMALL LETTER G WITH DOT ABOVE}h
+  ;h: \N{LATIN SMALL LETTER H WITH DOT BELOW}
+  ;n: \N{LATIN SMALL LETTER N WITH TILDE}
+  ;r: \N{LATIN SMALL LETTER R WITH DOT BELOW}
+  ;rh: \N{LATIN SMALL LETTER R WITH DOT BELOW}h
+  ;s: \N{LATIN SMALL LETTER S WITH DOT ABOVE}
+  ;t: \N{LATIN SMALL LETTER T WITH DOT BELOW}
+  ;th: \N{LATIN SMALL LETTER T WITH DOT BELOW}h
+  ;x: \N{LATIN SMALL LETTER K WITH DOT BELOW}h
+  ;z: \N{LATIN SMALL LETTER Z WITH DOT ABOVE}
+  <-e>: (-e)
+  '?': '?'
+  '[': '['
+  ']': ']'
+#  _sh: \N{LATIN SMALL LETTER S WITH DOT BELOW}
+  a: a
+  ^a: a
+  aa: \N{LATIN SMALL LETTER A WITH MACRON}
+  ai: ai
+  ^ai: ai
+  au: au
+  ^au: au
+  b: b
+  bh: bh
+  ch: ch
+  chh: chh
+  d: d
+  dh: dh
+  e: e
+  f: f
+  g: g
+  gh: gh
+  h: h
+  i: i
+  ^i: i
+  ii: \N{LATIN SMALL LETTER I WITH MACRON}
+  ^ii: \N{LATIN SMALL LETTER I WITH MACRON}
+  j: j
+  jh: jh
+  k: k
+  kh: kh
+  l: l
+  m: m
+  n: n
+  o: o
+  p: p
+  ph: ph
+  q: q
+  r: r
+  s: s
+  sh: sh
+  t: t
+  th: th
+  u: u
+  ^u: u
+  uu: \N{LATIN SMALL LETTER U WITH MACRON}
+  ^uu: \N{LATIN SMALL LETTER U WITH MACRON}
+  v: v
+  w: w
+  y: y
+  z: z
+  zh: zh
+  '|': ''
+  '1': '1'
+  '2': '2'
+  '3': '3'
+  '4': '4'
+  '5': '5'
+  '6': '6'
+  '7': '7'
+  '8': '8'
+  '9': '9'
+  '0': '0'
+tokens:
+  '0':
+  - number
+  - wb
+  '1':
+  - number
+  - wb
+  '2':
+  - number
+  - wb
+  '3':
+  - number
+  - wb
+  '4':
+  - number
+  - wb
+  '5':
+  - number
+  - wb
+  '6':
+  - number
+  - wb
+  '7':
+  - number
+  - wb
+  '8':
+  - number
+  - wb
+  '9':
+  - number
+  - wb
+  '"':
+  - wb
+  "\n":
+  - wb
+  "\r":
+  - wb
+  ' ':
+  - wb
+  '!':
+  - punctuation
+  - wb
+  '''':
+  - letter_break
+  (:
+  - punctuation
+  - wb
+  ((:
+  - ain
+  - consonant
+  (-e):
+  - hidden_izaafat
+  ):
+  - punctuation
+  - wb
+  )):
+  - consonant
+  ',':
+  - punctuation
+  - wb
+  '-':
+  - wb
+  --:
+  - punctuation
+  - wb
+  '----':
+  - punctuation
+  - wb
+  -e:
+  - izaafat
+  .r:
+  - consonant
+  .s:
+  - consonant
+  .z:
+  - consonant
+  /:
+  - wb
+  ':':
+  - punctuation
+  - wb
+  :n:
+  - consonant
+  :t:
+  - consonant
+  :z:
+  - consonant
+  ;:
+  - punctuation
+  - wb
+  ;aa:
+  - vowel
+  ;d:
+  - consonant
+  ;dh:
+  - consonant
+  ;e:
+  - short_vowel
+  - short_vowel_e
+  ;o:
+  - short_vowel
+  - short_vowel_o
+  ;g:
+  - consonant
+  ;h:
+  - consonant
+  ;m:
+  - vowel_nasal
+  ;n:
+  - consonant
+  ;r:
+  - consonant
+  ;rh:
+  - consonant
+  ;s:
+  - consonant
+  ;t:
+  - consonant
+  ;th:
+  - consonant
+  ;x:
+  - ;x_class
+  - consonant
+  ;z:
+  - consonant
+  '?':
+  - punctuation
+  - wb
+  "\0":
+  - wb
+  '[':
+  - punctuation
+  - wb
+  ']':
+  - punctuation
+  - wb
+  a:
+  - short_vowel
+  - short_vowel_a
+  ^a:
+  - short_vowel
+  - short_vowel_a
+  aa:
+  - alef
+  - vowel
+  ai:
+  - vowel
+  ^ai:
+  - vowel
+  au:
+  - vowel
+  ^au:
+  - vowel
+  b:
+  - consonant
+  bh:
+  - consonant
+  ch:
+  - consonant
+  chh:
+  - consonant
+  d:
+  - consonant
+  dh:
+  - consonant
+  e:
+  - vowel
+  ;e:
+  - short_vowel
+  f:
+  - consonant
+  g:
+  - consonant
+  gh:
+  - consonant
+  h:
+  - consonant
+  - consonant_h
+  i:
+  - short_vowel
+  ^i:
+  - short_vowel
+  ii:
+  - vowel
+  ^ii:
+  - vowel
+  j:
+  - consonant
+  jh:
+  - consonant
+  k:
+  - consonant
+  kh:
+  - consonant
+  l:
+  - consonant
+  m:
+  - consonant
+  n:
+  - consonant
+  o:
+  - vowel
+  p:
+  - consonant
+  ph:
+  - consonant
+  q:
+  - consonant
+  r:
+  - consonant
+  s:
+  - consonant
+  sh:
+  - consonant
+  t:
+  - consonant
+  th:
+  - consonant
+  u:
+  - short_vowel
+  ^u:
+  - short_vowel
+  uu:
+  - vowel
+  ^uu:
+  - vowel
+  v:
+  - consonant
+  w:
+  - consonant
+  y:
+  - consonant
+  z:
+  - consonant
+  zh:
+  - consonant
+  '|':
+  - hindi_break
+  "\t":
+  - wb
+  _:
+  - wb
+  .:
+  - wb
