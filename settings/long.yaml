@@ -1,0 +1,107 @@
+rules:
+  b pahun: l_bpahun
+  b c v b al: l_bcvbal
+  c v b al: l_cvbal
+  c<h+wb> b al: l_c<h+wb>bal
+  (b al) c v c<h+wb>: l_(bal)cvc<h+wb>
+  c b al: l_cbal
+  b dul_han: l_bdul_han
+  b duul_haa: l_bduul_haa
+  b al: l_bal
+  (o) s c: l_(o)sc
+  b c c s c: l_bccsc
+  b c s c: l_bcsc
+  b c s c<h+wb>: l_bcsc<h+wb>
+  b c s n c: l_bcsnc
+  b c s n c<h+wb>: l_bcsnc<h+wb>
+  b c v: l_bcv
+  b c v_duii: l_bcv_duii
+#  b c v c (b): l_dost_2
+#  b c v c (cb): l_dost_2
+#  b c v c c (b): l_dost
+  b c v n: l_bcvn
+  b c v<aa+z>: l_bcv<aa+z>
+  b c v_e_fut: l_bcv_e_fut
+  b c v_e_fut n: l_bcv_e_futn
+  c v_uu<))o;n+wb>: l_c_v_uu<))o;n+wb>
+  b c<;xv> s c: l_bc<;xv>sc
+  b c<;xv> v: l_bc<;xv>v
+  b c<;xv> v n: l_bc<;xv>vn
+#  b c_ky v: l_ckyv
+#  b c_ky v n: l_ckyvn
+  b ko_ii: l_bko_ii
+  b kyaa: l_bkyaa
+  b o: l_bo
+  b s c: l_bsc
+  b s c n: l_bscn
+  b s c<h+wb>: l_bsc<h+wb>
+  b s n c: l_bsnc
+  b v: l_bv
+  b v n: l_bvn
+  b v<aur>: l_bv<aur>
+  b v<aur> c: l_bv<aur>c
+  c b s c: l_cbsc
+  c b v: l_cbv
+  c b v n: l_cbvn
+  c b v<aur>: l_cbv<aur>
+  c b v<aur> c: l_cbv<aur>c
+  c o: l_co
+  c b o: l_cbo # problem here
+  c s c: l_csc
+  c s c<h+wb>: l_csc<h+wb>
+  c s n c: l_csnc
+  c v: l_cv
+  c v n: l_cvn
+  c v<aa+z>: l_cv<aa+z>
+  c v<ii+o>: l_cv<ii+o>
+  c v<ii+z>: l_cv<ii+z>
+  v<ii+z> z: l_v<ii+z>z
+  b c c v: l_bccv
+  b c c v n: l_bccvn
+  b c v<aa+z>: l_bcv<aa+z>
+  b c v<ii+o>: l_bcv<ii+o>
+  b c v<ii+z>: l_bcv<ii+z>
+  c v_e_fut n: l_cv_e_futn
+  c v_o_fut: l_cv_o_fut
+  c v_uu_fut: l_cv_o_fut
+  b c v_o_fut: l_bcv_o_fut  #eg hogii
+  c v_e_fut: l_cv_e_fut
+  c z: l_cz
+  c<;xv> s c: l_c<;xv>sc
+  c<;xv> v: l_c<;xv>v
+  c<;xv> v n: l_c<;xv>vn
+  c<h+wb> o: l_c<h+wb>o
+  ko_ii: l_ko_ii
+  o: l_o
+  v: l_v
+  v<ii+o> (o): l_v<ii+o>(o)
+  z: l_z
+tokens:
+  v_uu<))o;n+wb>: tkn
+  b: tkn
+  c: tkn
+  c<;xv>: tkn
+  c<h+wb>: tkn
+  c_ky: tkn
+  ko_ii: tkn
+  kyaa: tkn
+  n: tkn
+  o: tkn
+  s: tkn
+  v: tkn
+  v<aa+z>: tkn
+  v<aur>: tkn
+  v<ii+o>: tkn
+  v<ii+z>: tkn
+  v_e_fut: tkn
+  v_o_fut: tkn
+  v_uu_fut: tkn
+  z: tkn
+  tum: tkn
+  nah: tkn
+  al: tkn
+  v_duii: tkn
+  pahun: tkn
+  dul_han: tkn
+  al: tkn
+  duul_haa: tkn
